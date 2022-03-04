@@ -23,43 +23,47 @@ function start() {
 }
 
 function check(num) {
+
     x = "";
     for (var i = 0; i < 5; i++) {
         x += document.getElementById(num + String(i)).value;
     }
-    x = x.toLowerCase();
-    var f = 0;
-    for (var i = 0; i < list.length; i++) {
-        if (list[i] == x) f = 1;
-    }
-    if (f == 0) {
-        alert("Enter a valid word");
-        return;
-    }
-    for (var i = 0; i < 5; i++) {
-        var g = 0;
-        if (x[i] == need[i]) {
-            document.getElementById(num + String(i)).style.background = 'green';
-        } else {
-            for (var j = 0; j < 5; j++) {
-                if (need[j] == x[i]) g = 1;
-            }
-            if (g == 1) {
-                document.getElementById(num + String(i)).style.background = 'orange';
-            } else {
-                document.getElementById(num + String(i)).style.background = 'grey';
-            }
+    if (x.length == 5) {
+        x = x.toLowerCase();
+        var f = 0;
+        for (var i = 0; i < list.length; i++) {
+            if (list[i] == x) f = 1;
         }
-        document.getElementById(num + String(i)).disabled = true;
-    }
+        if (f == 0) {
+            setTimeout(function () { alert("Enter a valid word"); }, 250);
 
-    if (x == need) {
-        setTimeout(function () { alert("YOU WON"); }, 250);
-    } else if (num == 5) {
-        setTimeout(function () { alert("YOU LOST. The correct word was " + need); }, 250);
+            return;
+        }
+        for (var i = 0; i < 5; i++) {
+            var g = 0;
+            if (x[i] == need[i]) {
+                document.getElementById(num + String(i)).style.background = 'green';
+            } else {
+                for (var j = 0; j < 5; j++) {
+                    if (need[j] == x[i]) g = 1;
+                }
+                if (g == 1) {
+                    document.getElementById(num + String(i)).style.background = 'orange';
+                } else {
+                    document.getElementById(num + String(i)).style.background = 'grey';
+                }
+            }
+            document.getElementById(num + String(i)).disabled = true;
+        }
+
+        if (x == need) {
+            setTimeout(function () { alert("YOU WON"); }, 250);
+        } else if (num == 5) {
+            setTimeout(function () { alert("YOU LOST. The correct word was " + need); }, 250);
+        }
     }
 }
 function move(frm, to) {
-    if (frm.value.length == 1)
+    if (frm.value.length === 1)
         document.getElementById(to).focus();
 }
