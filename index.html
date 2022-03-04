@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="btnn">
+        <button id="btns" onclick="start()">New game</button>
+    </div>
+    <br><br>
+    <div class="put">
+        <input type="text" id="00" maxlength="1" oninput="move(this,'01')">
+        <input type="text" id="01" maxlength="1" oninput="move(this,'02')">
+        <input type="text" id="02" maxlength="1" oninput="move(this,'03')">
+        <input type="text" id="03" maxlength="1" oninput="move(this,'04')">
+        <input type="text" id="04" maxlength="1" oninput="check(0)">
+        <br>
+        <input type="text" id="10" maxlength="1" oninput="move(this,'11')">
+        <input type="text" id="11" maxlength="1" oninput="move(this,'12')">
+        <input type="text" id="12" maxlength="1" oninput="move(this,'13')">
+        <input type="text" id="13" maxlength="1" oninput="move(this,'14')">
+        <input type="text" id="14" maxlength="1" oninput="check(1)">
+        <br>
+        <input type="text" id="20" maxlength="1" oninput="move(this,'21')">
+        <input type="text" id="21" maxlength="1" oninput="move(this,'22')">
+        <input type="text" id="22" maxlength="1" oninput="move(this,'23')">
+        <input type="text" id="23" maxlength="1" oninput="move(this,'24')">
+        <input type="text" id="24" maxlength="1" oninput="check(2)">
+        <br>
+        <input type="text" id="30" maxlength="1" oninput="move(this,'31')">
+        <input type="text" id="31" maxlength="1" oninput="move(this,'32')">
+        <input type="text" id="32" maxlength="1" oninput="move(this,'33')">
+        <input type="text" id="33" maxlength="1" oninput="move(this,'34')">
+        <input type="text" id="34" maxlength="1" oninput="check(3)">
+        <br>
+        <input type="text" id="40" maxlength="1" oninput="move(this,'41')">
+        <input type="text" id="41" maxlength="1" oninput="move(this,'42')">
+        <input type="text" id="42" maxlength="1" oninput="move(this,'43')">
+        <input type="text" id="43" maxlength="1" oninput="move(this,'44')">
+        <input type="text" id="44" maxlength="1" oninput="check(4)">
+        <br>
+        <input type="text" id="50" maxlength="1" oninput="move(this,'51')">
+        <input type="text" id="51" maxlength="1" oninput="move(this,'52')">
+        <input type="text" id="52" maxlength="1" oninput="move(this,'53')">
+        <input type="text" id="53" maxlength="1" oninput="move(this,'54')">
+        <input type="text" id="54" maxlength="1" oninput="check(5)">
+        <br>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
