@@ -67,4 +67,5 @@ function move(frm, to) {
     frm.value = frm.value.toUpperCase();
     if (frm.value.length === 1)
         document.getElementById(to).focus();
+    check(to[0]);
 }
