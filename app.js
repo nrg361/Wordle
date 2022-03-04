@@ -11,7 +11,7 @@ function start() {
     p = Math.floor(p);
     var l = 66;
     var m = 61;
-    var bgColor = "rgb(" + l + "," + m + "," + l + ")";
+    var bgColor = "rgb(66, 61, 66)";
     need = list[p];
     for (var i = 0; i < 6; i++) {
         for (var j = 0; j < 5; j++) {
@@ -23,7 +23,7 @@ function start() {
 }
 
 function check(num) {
-
+    document.getElementById(num + String(4)).value = document.getElementById(num + String(4)).value.toUpperCase();
     x = "";
     for (var i = 0; i < 5; i++) {
         x += document.getElementById(num + String(i)).value;
@@ -64,6 +64,7 @@ function check(num) {
     }
 }
 function move(frm, to) {
+    frm.value = frm.value.toUpperCase();
     if (frm.value.length === 1)
         document.getElementById(to).focus();
 }
