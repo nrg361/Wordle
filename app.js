@@ -59,7 +59,7 @@ function check(num) {
             setTimeout(function () { alert("YOU WON"); }, 250);
         } else if (num == 5) {
             need = need.toUpperCase();
-            setTimeout(function () { alert("YOU LOST. The correct word was " + need); }, 250);
+            setTimeout(function () { alert("YOU LOST\n.CORRECT WORD WAS " + need); }, 250);
         }
     }
 }
