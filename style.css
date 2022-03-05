@@ -1,0 +1,33 @@
+input{
+    width: 60px;
+    height: 60px;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(66, 61, 66);
+    color: cyan;
+}
+.btnn{
+    align-items: center;
+    text-align: center;
+}
+#btns{
+    background-color: rgb(48, 61, 61);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-size: medium;
+    color: cyan;
+    margin-top: 25px;
+}
+#btns:hover{
+    background-color: rgb(14, 112, 112);
+    cursor: pointer;
+}
+body{
+    background-image: url("1234.jpg");
+    background-size: 1520px 750px;
+}
+.put{
+    text-align: center;
+}
