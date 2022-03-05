@@ -15,41 +15,41 @@
     </div>
     <br><br>
     <div class="put">
-        <input type="text" id="00" maxlength="1" oninput="move(this,'01')">
-        <input type="text" id="01" maxlength="1" oninput="move(this,'02')">
-        <input type="text" id="02" maxlength="1" oninput="move(this,'03')">
-        <input type="text" id="03" maxlength="1" oninput="move(this,'04')">
-        <input type="text" id="04" maxlength="1" oninput="check(0)">
+        <input type="text" id="00" maxlength="1" onkeydown="moves(this,'01','05')" oninput="move(this,'01','05')">
+        <input type="text" id="01" maxlength="1" onkeydown="moves(this,'02','00')" oninput="move(this,'02','00')">
+        <input type="text" id="02" maxlength="1" onkeydown="moves(this,'03','01')" oninput="move(this,'03','01')">
+        <input type="text" id="03" maxlength="1" onkeydown="moves(this,'04','02')" oninput="move(this,'04','02')">
+        <input type="text" id="04" maxlength="1" onkeydown="moves(this,'05','03')" oninput="move(this,'05','03')">
         <br>
-        <input type="text" id="10" maxlength="1" oninput="move(this,'11')">
-        <input type="text" id="11" maxlength="1" oninput="move(this,'12')">
-        <input type="text" id="12" maxlength="1" oninput="move(this,'13')">
-        <input type="text" id="13" maxlength="1" oninput="move(this,'14')">
-        <input type="text" id="14" maxlength="1" oninput="check(1)">
+        <input type="text" id="10" maxlength="1" onkeydown="moves(this,'11','15')" oninput="move(this,'11','15')">
+        <input type="text" id="11" maxlength="1" onkeydown="moves(this,'12','10')" oninput="move(this,'12','10')">
+        <input type="text" id="12" maxlength="1" onkeydown="moves(this,'13','11')" oninput="move(this,'13','11')">
+        <input type="text" id="13" maxlength="1" onkeydown="moves(this,'14','12')" oninput="move(this,'14','12')">
+        <input type="text" id="14" maxlength="1" onkeydown="moves(this,'15','13')" oninput="move(this,'15','13')">
         <br>
-        <input type="text" id="20" maxlength="1" oninput="move(this,'21')">
-        <input type="text" id="21" maxlength="1" oninput="move(this,'22')">
-        <input type="text" id="22" maxlength="1" oninput="move(this,'23')">
-        <input type="text" id="23" maxlength="1" oninput="move(this,'24')">
-        <input type="text" id="24" maxlength="1" oninput="check(2)">
+        <input type="text" id="20" maxlength="1" onkeydown="moves(this,'21','25')" oninput="move(this,'21','25')">
+        <input type="text" id="21" maxlength="1" onkeydown="moves(this,'21','25')" oninput="move(this,'22','20')">
+        <input type="text" id="22" maxlength="1" onkeydown="moves(this,'21','25')" oninput="move(this,'23','21')">
+        <input type="text" id="23" maxlength="1" onkeydown="moves(this,'21','25')" oninput="move(this,'24','22')">
+        <input type="text" id="24" maxlength="1" onkeydown="moves(this,'21','25')" oninput="move(this,'25','23')">
         <br>
-        <input type="text" id="30" maxlength="1" oninput="move(this,'31')">
-        <input type="text" id="31" maxlength="1" oninput="move(this,'32')">
-        <input type="text" id="32" maxlength="1" oninput="move(this,'33')">
-        <input type="text" id="33" maxlength="1" oninput="move(this,'34')">
-        <input type="text" id="34" maxlength="1" oninput="check(3)">
+        <input type="text" id="30" maxlength="1" onkeydown="moves(this,'31','35')" oninput="move(this,'31','35')">
+        <input type="text" id="31" maxlength="1" onkeydown="moves(this,'31','35')" oninput="move(this,'32','30')">
+        <input type="text" id="32" maxlength="1" onkeydown="moves(this,'31','35')" oninput="move(this,'33','31')">
+        <input type="text" id="33" maxlength="1" onkeydown="moves(this,'31','35')" oninput="move(this,'34','32')">
+        <input type="text" id="34" maxlength="1" onkeydown="moves(this,'31','35')" oninput="move(this,'35','33')">
         <br>
-        <input type="text" id="40" maxlength="1" oninput="move(this,'41')">
-        <input type="text" id="41" maxlength="1" oninput="move(this,'42')">
-        <input type="text" id="42" maxlength="1" oninput="move(this,'43')">
-        <input type="text" id="43" maxlength="1" oninput="move(this,'44')">
-        <input type="text" id="44" maxlength="1" oninput="check(4)">
+        <input type="text" id="40" maxlength="1" onkeydown="moves(this,'41','45')" oninput="move(this,'41','45')">
+        <input type="text" id="41" maxlength="1" onkeydown="moves(this,'41','45')" oninput="move(this,'42','40')">
+        <input type="text" id="42" maxlength="1" onkeydown="moves(this,'41','45')" oninput="move(this,'43','41')">
+        <input type="text" id="43" maxlength="1" onkeydown="moves(this,'41','45')" oninput="move(this,'44','42')">
+        <input type="text" id="44" maxlength="1" onkeydown="moves(this,'41','45')" oninput="move(this,'45','43')">
         <br>
-        <input type="text" id="50" maxlength="1" oninput="move(this,'51')">
-        <input type="text" id="51" maxlength="1" oninput="move(this,'52')">
-        <input type="text" id="52" maxlength="1" oninput="move(this,'53')">
-        <input type="text" id="53" maxlength="1" oninput="move(this,'54')">
-        <input type="text" id="54" maxlength="1" oninput="check(5)">
+        <input type="text" id="50" maxlength="1" onkeydown="moves(this,'51','55')" oninput="move(this,'51','55')">
+        <input type="text" id="51" maxlength="1" onkeydown="moves(this,'51','55')" oninput="move(this,'52','50')">
+        <input type="text" id="52" maxlength="1" onkeydown="moves(this,'51','55')" oninput="move(this,'53','51')">
+        <input type="text" id="53" maxlength="1" onkeydown="moves(this,'51','55')" oninput="move(this,'54','52')">
+        <input type="text" id="54" maxlength="1" onkeydown="moves(this,'51','55')" oninput="move(this,'55','53')">
         <br>
 
     </div>
